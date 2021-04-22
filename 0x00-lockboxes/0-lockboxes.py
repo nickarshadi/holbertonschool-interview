@@ -1,31 +1,14 @@
 #!/usr/bin/python3
-"""Unlock all boxes Module."""
+"""Lockboxmodule."""
 
 
 def canUnlockAll(boxes):
-    """Open all boxes."""
-    keys = {0}
-    allkeys = {0}
-    i = 0
-    v = 0
-    if not boxes or len(boxes) <= 1:
+    """Determine if all the boxes can be opened."""
+    keys = [0]
+    for index in keys:
+        for key in boxes[index]:
+            if key not in keys and key < len(boxes):
+                keys.append(key)
+    if len(keys) == len(boxes):
         return True
-    while i < 1000:
-        for key in boxes[v]:
-            keys.add(key)
-            allkeys.add(key)
-        if len(allkeys) >= len(boxes):
-            return True
-        if keys:
-            if v < len(boxes):
-                v = keys.pop()
-            else:
-                while v > len(boxes):
-                    if keys:
-                        v = keys.pop()
-                    else:
-                        return False
-        else:
-            return False
-        i += 1
     return False
