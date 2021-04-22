@@ -8,7 +8,7 @@ def canUnlockAll(boxes):
     allkeys = {0}
     i = 0
     v = 0
-    while i < 100:
+    while i < 1000:
         for key in boxes[v]:
             keys.add(key)
             allkeys.add(key)
