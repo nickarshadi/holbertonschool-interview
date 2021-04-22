@@ -18,6 +18,8 @@ def canUnlockAll(boxes):
             return True
         if keys:
             v = keys.pop()
+            if v > len(boxes):
+                v = keys.pop()
         else:
             return False
         i += 1
