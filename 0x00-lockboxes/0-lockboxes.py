@@ -18,6 +18,5 @@ def canUnlockAll(boxes):
             v = keys.pop()
         else:
             return False
-        print("Added box {}".format(v))
         i += 1
     return False
