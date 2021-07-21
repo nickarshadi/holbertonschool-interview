@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Lockbox."""
 
+
 def canUnlockAll(boxes):
     """Determine if all the boxes can be openedboxes is a list of lists.
     Args:
