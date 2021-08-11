@@ -11,3 +11,7 @@ Each folder contains my solution to different coding problems given by Holberton
 - [Is Linked List Palindrome](./0x05-linked_list_palindrome)
 - [Log Parsing](./0x06-log_parsing)
 - [Linked List Cycle](./0x07-linked_list_cycle)
+
+## Author
+* **Sofia Cheung** - [Svcg17](https://github.com/Svcg17)
+
