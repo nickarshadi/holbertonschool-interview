@@ -1,24 +1,22 @@
 #!/usr/bin/python3
-import math
+"""
+calculates the minimum amount of processes necessary
+to create a certain number of characters.
+"""
 
 
 def minOperations(n):
-    """ Calculates the fewest number of operations needed to result in
-        exactly n H characters.
-
-        Args:
-            @n: integer
-
-        Return:
-            the fewest number of operations needed to result in n H characters
     """
-    suma = 0
+    Minimum Operations
+    """
     if n <= 1:
-        return suma
-    for i in range(2, int(math.sqrt(n) + 1)):
-        while n % i == 0:
-            suma += i
-            n = n // i
-    if n > 1:
-        suma += n
-    return suma
+        return 0
+    num_operations = 0
+    div = 2
+    while n > 1:
+        if n % div == 0:
+            n /= div
+            num_operations += div
+        else:
+            div += 1
+    return num_operations
