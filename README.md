@@ -13,5 +13,5 @@ Each folder contains my solution to different coding problems given by Holberton
 - [Linked List Cycle](./0x07-linked_list_cycle)
 
 ## Author
-* **Sofia Cheung** - [Svcg17](https://github.com/Svcg17)
+* **SNick Arshadi**
 
